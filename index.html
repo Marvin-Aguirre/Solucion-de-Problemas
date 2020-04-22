@@ -47,7 +47,22 @@
             var a=document.getElementById("a").value;
             var b=document.getElementById("b").value;
             var resultado;
+            //Verificamos si el campo esta en blanco
+            if(a==""){
+                a=0;
+            }
             
+            else{
+            a=parseInt(a);
+                    }
+
+            if(b==""){
+            b=0;
+            }
+            
+            else{
+                b=parseInt(b);
+            }
             //Realizamos la suma
             resultado=a+b;
             //Mostramos el resultado
